@@ -1,0 +1,2 @@
+# TrOCR-Ru-dialectic-handwritten
+
