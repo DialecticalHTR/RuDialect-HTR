@@ -16,11 +16,11 @@ This repository contains four Jupyter notebooks:
 
 All training was performed in **Kaggle Notebooks** using free cloud GPUs.
 
-| Model | Task                         | Notebook                                                                                                                                |
-| ----- | ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| CRAFT | Text Detection               | [CRAFT: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/craft-russian-dialectic-text-detection/output)    |
-| YOLO  | Text Detection               | [YOLO: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/yolo-russian-dialectic-text-detection)             |
-| TrOCR | Handwritten Text Recognition | [TrOCR: Russian Dialectic HTR with PEFT (DoRA)](https://www.kaggle.com/code/daniilmatvienko/trocr-russian-dialectic-htr-with-peft-dora) |
+| Model | Notebook                                                                                                                                | Task                               |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| CRAFT | [CRAFT: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/craft-russian-dialectic-text-detection/output)    | Text Detection                     |
+| YOLO  | [YOLO: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/yolo-russian-dialectic-text-detection)             | Text Detection                     |
+| TrOCR | [TrOCR: Russian Dialectic HTR with PEFT (DoRA)](https://www.kaggle.com/code/daniilmatvienko/trocr-russian-dialectic-htr-with-peft-dora) | Handwritten Text Recognition (HTR) |
 
 > **Note:** These notebooks are demonstration versions (final experiment configurations). The original development notebooks are private and will not be published.
 
@@ -32,9 +32,21 @@ Fine-tuned model checkpoints are available on Hugging Face:
 
 | Model                   | Hugging Face Link                                                                                                    |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| YOLO11x-dialectic       | [huggingface.co/Daniil-Domino/yolo11x-dialectic](https://huggingface.co/Daniil-Domino/yolo11x-dialectic)             |
-| TrOCR-base-ru-dialectic | [huggingface.co/Daniil-Domino/trocr-base-ru-dialectic](https://huggingface.co/Daniil-Domino/trocr-base-ru-dialectic) |
 | CRAFT                   | *Not published due to low performance* — weights available in Kaggle notebook output (see above).                    |
+| YOLO11x-dialectic       | [huggingface.co/Daniil-Domino/yolo11x-dialectic](https://huggingface.co/Daniil-Domino/yolo11x-dialectic)             |
+| TrOCR-base-Ru-dialectic | [huggingface.co/Daniil-Domino/trocr-base-ru-dialectic](https://huggingface.co/Daniil-Domino/trocr-base-ru-dialectic) |
+
+---
+
+## Used Datasets
+
+The following datasets were used and are available on Hugging Face:
+
+| Dataset                      | Hugging Face Link                                                                                                                        | Task                               |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| school_notebooks_RU          | [huggingface.co/datasets/ai-forever/school_notebooks_RU](https://huggingface.co/datasets/ai-forever/school_notebooks_RU)                 | Text Detection                     |
+| Ru-dialectological-stackmix  | [huggingface.co/datasets/CherryJam/ru-dialectological-stackmix](https://huggingface.co/datasets/CherryJam/ru-dialectological-stackmix)   | Handwritten Text Recognition (HTR) |
+| Ru-dialectological-fonts-aug | [huggingface.co/datasets/CherryJam/ru-dialectological-fonts-aug](https://huggingface.co/datasets/CherryJam/ru-dialectological-fonts-aug) | Handwritten Text Recognition (HTR) |
 
 ---
 
@@ -47,7 +59,7 @@ For local or custom environments, install the dependencies manually using:
 ```bash
 pip install -r requirements.txt --quiet
 ```
-Tested with python version 3.10.18
+Tested with Python version 3.10.18
 
 ---
 
