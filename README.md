@@ -18,7 +18,7 @@ All training was performed in **Kaggle Notebooks** using free cloud GPUs.
 
 | Model | Notebook                                                                                                                                | Task                               |
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| CRAFT | [CRAFT: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/craft-russian-dialectic-text-detection/output)    | Text Detection                     |
+| CRAFT | [CRAFT: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/craft-russian-dialectic-text-detection)           | Text Detection                     |
 | YOLO  | [YOLO: Russian Dialectic Text Detection](https://www.kaggle.com/code/daniilmatvienko/yolo-russian-dialectic-text-detection)             | Text Detection                     |
 | TrOCR | [TrOCR: Russian Dialectic HTR with PEFT (DoRA)](https://www.kaggle.com/code/daniilmatvienko/trocr-russian-dialectic-htr-with-peft-dora) | Handwritten Text Recognition (HTR) |
 
